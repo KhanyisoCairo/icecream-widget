@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Ice Cream</h1>
+        <div>
+            <div class="row">
+                <i>Select a flavour of your choice & the type of container you would like and different topings.
+
+                </i>
+
+            </div>
+            <div class="error">
+            </div>
+            <div class="row">
+                <select class="Selectflavour" onchange="getDropValue()">
+                    <option value="">Select a flavour</option>
+                    <option value="Vanilla">Vanilla</option>
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Strawberry">Strawberry</option>
+
+                </select>
+
+
+                
+            </div>
+            <div class="row">
+                <select class="selectcontainer" onchange="getContainerValue()">
+                    <option value="">Select a container</option>
+                    <option value="Plain Cone">Plain Cone</option>
+                    <option value="Sugar Cone">Sugar Cone</option>
+                    <option value="paper cup">paper cup</option>
+                </select>
+               
+            </div>
+            <div class=" selectToppings">
+                <h2>Select Toppings</h2>
+                <input type="checkbox" class="checkBox" value="Crumbed peanuts">Crumbed peanuts</option><br>
+                <input type="checkbox" class="checkBox" value="Caramal dip">Caramal dip</option><br>
+                <input type="checkbox" class="checkBox" value="Chocolate Dip">Chocolate Dip</input><br>
+                <input type="checkbox" class="checkBox" value="Smarties">Smarties</input><br>
+                <input type="checkbox" class="checkBox" value="Oreos">Oreos</input><br>
+                <input type="checkbox" class="checkBox" value="Astros">Astros</input>
+
+                <a href="#" onclick="getValue();return false;"> </a>
+                
+
+
+            </div>
+
+            <div>
+                <button class="addBtn">Add</button>
+
+            </div>
+            <div class="row results">
+
+            </div>
+            <div class="showResults">
+
+            </div>
+        </div>
+
+</body>
+<script src="../IceCream-widget/ice-cream.dom.js" charset="utf-8"></script>
+<script src="../IceCream-widget/ice-cream.js" charset="utf-8"></script>
+
+</html>
