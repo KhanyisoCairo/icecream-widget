@@ -1,8 +1,5 @@
 function FactoryIceCream() {
 	var iceCream = [];
-	var Flavor = 0;
-	var Contaner = 0;
-	var topping = 0;
 	var Vanilla = 0;
 	var Chocolate = 0;
 	var Strawberry = 0;
@@ -10,41 +7,21 @@ function FactoryIceCream() {
 	var SugarCone = 0
 	var papercup = 0;
 
-
-
 	function addflavour(flavor, container, topping) {
-
-		// flavor = flavor;
-		// Contaner = container;
-		// topping = topping
-
-
 		const flavorobj = {
 			flavor,
 			container,
 			topping
 		};
-		// const containerobj ={
 
-		// 	container,
-		// };
-		// const containerobj ={
-
-		// 	container,
-		// };
 		iceCream.push(flavorobj);
-		// iceCream.push(containerobj);
-		// iceCream.push(flavorobj);
-		// console.log(flavorobj);
-	}
 
+	}
 	function getIce() {
 		return iceCream;
 	}
-	// console.log(iceCream)
 
 	function culculatePrice(getPrice) {
-
 
 		switch (getPrice) {
 			case "vanilla":
@@ -70,7 +47,6 @@ function FactoryIceCream() {
 		}
 
 	}
-
 	function getValues() {
 
 		let total = 0;
@@ -85,12 +61,9 @@ function FactoryIceCream() {
 			else if (iceCream[i].flavor === "Strawberry") {
 				total += 15;
 			}
-
-
 		}
 		return total;
 	}
-
 
 	function getContaner() {
 
@@ -108,22 +81,20 @@ function FactoryIceCream() {
 			else if (iceCream[i].container === "papercup") {
 				total += 17;
 			}
-			//Contaner = PlainCone + SugarCone + papercup
+
 		}
 		return total;
 
 	}
 	function getTopping() {
-		// topping = getTopping
+
 		let total = 0;
 		console.log('toppping');
-		
+
 		for (var i = 0; i < iceCream.length; i++) {
 			var top = iceCream[i].topping;
 			console.log(iceCream[i]);
 			console.log(iceCream[i].topping);
-			
-	
 
 			top.forEach(function (x) {
 
@@ -152,11 +123,7 @@ function FactoryIceCream() {
 				}
 
 			})
-
-
 		}
-		// console.log(topping, 'vtyui');
-
 
 		return total;
 	}
@@ -167,7 +134,6 @@ function FactoryIceCream() {
 
 	}
 
-
 	return {
 		addflavour,
 		getIce,
@@ -177,7 +143,4 @@ function FactoryIceCream() {
 		getTopping,
 		getAllPrice
 	}
-
-
-
 }

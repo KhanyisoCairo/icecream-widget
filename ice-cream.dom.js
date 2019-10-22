@@ -80,7 +80,7 @@ addBtnElem.addEventListener("click", function () {
 
     showIceCreamElem.innerHTML = factroryInstance.addflavour(selectflavourElem.value, selectContainerElem.value, checkArray);
     showIceCreamElem.innerHTML = factroryInstance.culculatePrice();
-    showIceCreamElem.innerHTML ="The total price of your Ice Cream id"+"R" + factroryInstance.getAllPrice()  + "Enjoy";
+    showIceCreamElem.innerHTML = "The total price of your Ice Cream is" + "R" + factroryInstance.getAllPrice() + "Enjoy";
 
 
 });
